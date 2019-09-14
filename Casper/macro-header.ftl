@@ -21,7 +21,7 @@
 <header class="header header--${type}">
     <div class="wrapper header__title">
         <h1 class="header__h1 fn__flex-inline">
-            <img src="${faviconURL}">
+          <#--  <img src="${faviconURL}"> -->
             <a href="${servePath}" rel="start" class="header__title">${blogTitle}</a>
         </h1>
         <h2 class="header__h2">${blogSubtitle}</h2>
@@ -40,7 +40,9 @@
                 <#if page.pageIcon != ''><img src="${page.pageIcon}"></#if> ${page.pageTitle}
             </a>
         </#list>
-
+            <a href="${servePath}/tags.html" rel="section">
+                        标签
+            </a>
         <a href="${servePath}/search">
             ${searchLabel}
         </a>
